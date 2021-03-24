@@ -1,0 +1,23 @@
+<div class="main">
+  <div class="container container-form">
+    <form style="width: 320px;">
+      <h3 class="text__main_1">Вход</h3>
+      <div class="inputs">
+        <div>
+          <div class="ots">
+            <input class="fields" type="email"  placeholder="masha123@mail.ru" >
+
+        </div>
+
+        <div class="ots">
+          <input class="fields" type="password" placeholder="••••••••••">
+
+        </div>
+
+        <button class="submit"  [routerLink]="['','news']" routerLinkActive="active">Войти</button>
+        <p class="question">Нет аккаунта? <a [routerLink]="['','registration']" routerLinkActive="active"  class="redirect">Зарегистрироваться</a></p>
+      </div>
+      </div>
+    </form>
+  </div>
+</div>

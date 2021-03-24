@@ -1,0 +1,43 @@
+<header class="header">
+  <div class="container">
+    <div class="header__body">
+      <div class="header__body-nav">
+        <div [className]="isBurgerClicked ? 'header__burger active' : 'header__burger'" (click)="clickBurger()">
+          <span></span>
+        </div>
+
+        <nav [className]="isBurgerClicked?'header__menu active':'header__menu'">
+          <ul [className]="isBurgerClicked?'header__list active': 'header__list'">
+
+            <li routerLinkActive="active" >
+              <a class="header__link" [routerLink]="['','news']">Новостная лента</a>
+            </li>
+
+            <li style="margin-left: 30px;">
+              <a class="header__link">Мои должностные обязанности</a>
+            </li>
+
+            <li style="margin-left: 30px;">
+              <a class="header__link">Сотрудники</a>
+            </li>
+            <li style="margin-left: 30px;">
+              <a class="header__link">Схема здания</a>
+            </li>
+            <li style="margin-left: 30px;">
+              <a class="header__link">График работы</a>
+            </li>
+            <li style="margin-left: 30px;">
+              <a class="header__link">О компании</a>
+            </li>
+
+            <li routerLinkActive="active" style="margin-left: 30px;">
+              <a class="header__link" [routerLink]="['','personal-account']">Личный кабинет</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+    </div>
+  </div>
+</header>
